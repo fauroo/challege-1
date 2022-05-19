@@ -1,0 +1,329 @@
+
+body{
+    background-color: #E5E5E5 ;
+    font-family: 'Roboto', sans-serif;
+    
+    }
+
+.contenedor{
+    width: 90%;
+    max-width: 1440px;
+    height: 1024px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "header header header"
+                         "contenido contenido sidebar"
+                         "boton1 boton2 sidebar"
+                         "footer footer footer"   ;
+
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer{
+    background: #E5E5E5;
+    padding: 20px;
+    border-radius: 4px;
+
+}
+
+.contenedor .header{
+    grid-area: header;
+    
+}
+
+.contenedor .contenido{
+    height: 250px;
+    grid-area: contenido;
+}
+
+
+#textBox1{
+    background-color:#E5E5E5 ;
+    width: 577px;
+    height: 200px;
+    color: #0A3871;
+    font-family: 'Roboto', sans-serif;
+	font-size: 32px;
+	font-weight: 500;
+    line-height: 150%;
+    border: none;
+}
+
+
+
+
+.contenedor .sidebar{
+   
+    align-items: center;
+    justify-content: center;
+    grid-area: sidebar;
+    width: 370px;
+    height: 600px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+#divTextArea{
+    display: none;
+}
+
+#textArea{
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    background: #E5E5E5;
+	color: #0A3871;
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	font-weight: 500;
+    border: none;
+    
+}
+
+
+.muneco{
+    top: 283px;
+    width: 336px;
+    height: 304px;
+    display: block;
+}
+
+
+#divH5{
+    display: block;
+
+}
+
+.h5{
+
+    width: 336px;
+    height: 58px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #343A40;
+    text-align: center;
+    align-self: stretch;
+
+}
+#divCopiar{
+    display: none;
+    position: absolute;
+    top: 680px; 
+}
+.copiar{
+    
+    display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 362px;
+	height:67px;
+	background: #D8DFE8;
+	color: #0A3871;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+    border: none ;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: .3s ease all;
+    position: relative;
+    overflow: hidden;
+}
+
+.copiar span {
+    position: relative;
+    z-index:  2; 
+    transition: .3s ease all;
+}
+
+.contenedor .boton1,
+.contenedor .boton2{
+    height: 160px;
+    display: inline-flex;
+    align-items:center;
+
+  
+}
+
+.contenedor .boton1{
+    grid-area: boton1;
+
+}
+.advertencia
+{
+    left: 80px;
+    position: relative;
+}
+
+
+.infoLogo{
+    position: relative;
+    left: 35px;
+    top: -50px;
+
+}
+
+
+.encriptar{
+    display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 362px;
+	height:67px;
+	background: #0A3871;
+	color: #D8DFE8;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	border:none ;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: .3s ease all;
+    overflow: hidden;
+    position: relative;
+}
+
+.encriptar span {
+    position: relative;
+    z-index:  2; 
+    transition: .3s ease all;
+}
+
+
+.contenedor .boton2{
+    grid-area: boton2;
+
+}
+
+.desencriptar{
+    display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 362px;
+	height:67px;
+	background: #D8DFE8;
+	color: #0A3871;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+    border: none ;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: .3s ease all;
+    position: relative;
+    overflow: hidden;
+    
+
+}
+.desencriptar span {
+    position: relative;
+    z-index:  2; 
+    transition: .3s ease all;
+}
+
+.contenedor .footer{
+
+grid-area: footer;
+box-shadow: 0px -24px 32px -8px rgba(0, 0, 0, 0.08);
+border-radius: 10px;
+
+}
+
+#id-derechos{
+    display: inline-flex;
+	align-items: center;
+    font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+    position: absolute;
+   left: 840px;
+	
+    top: 1020px; 
+    
+	
+}
+
+
+.contenedor-linkedin svg{
+
+    left: 50%;
+    position: absolute;
+    color: #343A40;
+}
+
+
+
+.contenedor-githud svg{
+
+    left: 47%;
+    position: absolute;
+    color: #343A40;
+}
+
+
+.contenedor-email{
+
+    left: 53%;
+    position: absolute;
+    color: #343A40;
+
+}
+
+@media screen and (max-width: 760px ){
+   
+    .contenedor{
+        grid-template-areas:"header header header"
+                            "contenido contenido contenido"
+                            "sidebar sidebar sidebar"
+                            "boton1 boton1 boton1"
+                            "boton2 boton2 boton2"
+                            "footer footer footer"   ;
+    }
+}
+
+
+@media screen and  (max-width: 760px){
+
+    .muneco{
+        display: none;
+
+    }
+}
+
+@media screen and  (max-width: 760px){
+
+    .contenedor .sidebar{
+   
+        height: 200px;
+    }
+}
+
+
+
+@media screen and  (max-width: 760px){
+
+    #divCopiar{
+        
+        top: 580px; 
+    }
+}
+
+
+@media screen and  (max-width: 760px){
+
+    #textBox1{
+       
+        width: 370px;
+        
+    }
+}
